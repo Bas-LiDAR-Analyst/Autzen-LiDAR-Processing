@@ -1,0 +1,12 @@
+{
+    "pipeline": [
+        "D:/LiDAR_Learning/01_Raw_Data/autzen_trim.las",
+        {
+            "type": "writers.gdal",
+            "filename": "D:/LiDAR_Learning/03_Processed_Output/autzen_dem.tif",
+            "gdaldriver": "GTiff",
+            "output_type": "min",
+            "resolution": 2.0
+        }
+    ]
+}
